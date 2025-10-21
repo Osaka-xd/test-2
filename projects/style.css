@@ -1,0 +1,75 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#0b0d13;color:#e8eaed;line-height:1.6}
+a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.site-header{position:sticky;top:0;background:rgba(11,13,19,.6);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid #1f232b;z-index:50;transition:.3s}
+.site-header.hide{transform:translateY(-100%)}
+.site-header.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:.5px}.brand span{color:#3b82f6}
+.nav{display:flex;gap:24px;align-items:center}
+.nav a{color:#9aa0a6;transition:.2s;padding:8px 4px}
+.nav a:hover{color:#e8eaed}
+.cta-link{color:#e8eaed;border:1px solid #1f232b;border-radius:10px;padding:10px 14px;background:linear-gradient(180deg,#11141a,#0d1117);box-shadow:inset 0 1px 0 rgba(255,255,255,.06)}
+.nav-toggle{display:none;background:none;border:0;color:#e8eaed;font-size:22px}
+
+/* Hero */
+.hero{padding:96px 0;background:radial-gradient(1200px 600px at 10% 0%,rgba(59,130,246,.12),transparent),radial-gradient(800px 400px at 100% 10%,rgba(14,165,233,.12),transparent)}
+.hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero h1{font-size:40px;line-height:1.15;margin:0 0 12px}
+.hero p{color:#9aa0a6;margin:0 0 20px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;border:1px solid #1f232b;background:linear-gradient(180deg,#11141a,#0d1117);color:#e8eaed}
+.btn.primary{background:linear-gradient(180deg,#2563eb,#1e40af);border-color:#1e3a8a}
+.btn.ghost{background:transparent}
+.trust-bar{margin-top:20px;display:flex;gap:20px;color:#9aa0a6;font-size:14px}
+.mockup-card{width:100%;max-width:420px;margin:auto;background:#0d1117;border:1px solid #1f232b;border-radius:16px;padding:16px}
+.mockup-screen{height:180px;border-radius:8px;background:linear-gradient(180deg,#11141a,#0b0d13);border:1px solid #1f232b}
+.mockup-base{height:10px;margin-top:10px;border-radius:6px;background:#1f232b}
+
+/* Sections */
+.section{padding:80px 0}
+.section.alt{background:#0d1117}
+.section h2{font-size:28px;margin:0 0 8px}
+.section-subtitle{color:#9aa0a6;margin:0 0 24px}
+.grid{display:grid;gap:24px}
+.cards-3{grid-template-columns:repeat(3,1fr)}
+.card{border:1px solid #1f232b;border-radius:14px;padding:18px;background:linear-gradient(180deg,#0d1117,#0b0d13)}
+.card h3{margin:0 0 8px}
+.project .project-thumb{height:160px;border-radius:10px;background:linear-gradient(135deg,#1f232b,#11141a)}
+.project h3{margin:10px 0 0}
+
+/* About */
+.about{display:grid;grid-template-columns:300px 1fr;gap:32px;align-items:center}
+.about-media{width:100%;height:300px;border-radius:16px;background:radial-gradient(220px 120px at 40% 40%,rgba(59,130,246,.25),transparent),#0d1117;border:1px solid #1f232b}
+.list{margin:16px 0 0;padding:0;list-style:none;color:#9aa0a6}
+.list li{margin:6px 0}
+
+/* Testimonials */
+.testimonial p{margin:0 0 8px}
+.author{color:#9aa0a6;font-size:14px}
+
+/* Form */
+.contact-form .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.contact-form label{display:flex;flex-direction:column;gap:8px;color:#9aa0a6}
+.contact-form label.full{grid-column:1/-1}
+input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #1f232b;background:#0b0d13;color:#e8eaed}
+input::placeholder,textarea::placeholder{color:#6b7280}
+
+/* Footer */
+.site-footer{padding:28px 0;border-top:1px solid #1f232b;background:#0d1117}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:14px}
+.footer-links{display:flex;gap:16px}
+.footer-links a{color:#9aa0a6}
+
+/* Responsive */
+@media (max-width:960px){.hero-inner{grid-template-columns:1fr}.about{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .nav-toggle{display:block}
+  .nav{position:fixed;inset:64px 0 auto 0;background:#0d1117;border-top:1px solid #1f232b;flex-direction:column;padding:16px;gap:6px;transform:translateY(-120%);transition:.25s}
+  .nav-open .nav{transform:translateY(0)}
+  .cards-3{grid-template-columns:1fr}
+  .contact-form .form-grid{grid-template-columns:1fr}
+}

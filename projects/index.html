@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SuaEmpresa — Soluções Digitais Profissionais</title>
+  <meta name="description" content="Sites modernos, performance, SEO e design profissional para sua empresa." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand">Sua<span>Empresa</span></a>
+      <nav class="nav" id="nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="cta-link">Contato</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-controls="nav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Transforme sua presença digital com um site profissional</h1>
+          <p>Desenvolvemos experiências rápidas, responsivas e focadas em resultados — do design ao SEO.</p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn primary">Solicitar orçamento</a>
+            <a href="#portfolio" class="btn ghost">Ver portfólio</a>
+          </div>
+          <div class="trust-bar">
+            <span>Marca A</span><span>Marca B</span><span>Marca C</span><span>Marca D</span>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="mockup-card">
+            <div class="mockup-screen"></div>
+            <div class="mockup-base"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section">
+      <div class="container">
+        <h2>Serviços</h2>
+        <p class="section-subtitle">Soluções completas para seu negócio online.</p>
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>Design de Interfaces</h3>
+            <p>Identidade visual, UI/UX e protótipos que convertem.</p>
+          </article>
+          <article class="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites rápidos, responsivos e otimizados para SEO.</p>
+          </article>
+          <article class="card">
+            <h3>Marketing Digital</h3>
+            <p>Estratégias de conteúdo, SEO e automações.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section alt">
+      <div class="container">
+        <h2>Portfólio</h2>
+        <p class="section-subtitle">Alguns projetos recentes.</p>
+        <div class="grid cards-3">
+          <article class="project">
+            <div class="project-thumb"></div>
+            <h3>Projeto E-commerce</h3>
+          </article>
+          <article class="project">
+            <div class="project-thumb"></div>
+            <h3>Landing Page SaaS</h3>
+          </article>
+          <article class="project">
+            <div class="project-thumb"></div>
+            <h3>Site Institucional</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container about">
+        <div class="about-media"></div>
+        <div class="about-text">
+          <h2>Sobre nós</h2>
+          <p>Somos uma equipe multidisciplinar apaixonada por desempenho, acessibilidade e estética. Atuamos com processos ágeis e foco em métricas de negócio.</p>
+          <ul class="list">
+            <li>+50 projetos entregues</li>
+            <li>Tempo médio de entrega: 3–6 semanas</li>
+            <li>Suporte e evolução contínua</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section alt">
+      <div class="container">
+        <h2>Depoimentos</h2>
+        <div class="grid cards-3">
+          <article class="card testimonial">
+            <p>“O site ficou rápido e aumentou nossa conversão.”</p>
+            <span class="author">Camila, E-commerce</span>
+          </article>
+          <article class="card testimonial">
+            <p>“Processo organizado e entrega no prazo. Recomendavel.”</p>
+            <span class="author">João, SaaS</span>
+          </article>
+          <article class="card testimonial">
+            <p>“Excelente atendimento e qualidade técnica.”</p>
+            <span class="author">Mariana, Consultoria</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p class="section-subtitle">Conte sobre seu projeto. Retornamos em até 24h.</p>
+        <form class="contact-form" action="#" method="post" novalidate>
+          <div class="form-grid">
+            <label>
+              <span>Nome</span>
+              <input type="text" name="nome" required placeholder="Seu nome" />
+            </label>
+            <label>
+              <span>E-mail</span>
+              <input type="email" name="email" required placeholder="voce@empresa.com" />
+            </label>
+            <label>
+              <span>Empresa</span>
+              <input type="text" name="empresa" placeholder="Nome da empresa" />
+            </label>
+            <label class="full">
+              <span>Mensagem</span>
+              <textarea name="mensagem" rows="4" required placeholder="Descreva seu objetivo e prazo."></textarea>
+            </label>
+          </div>
+          <button class="btn primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 SuaEmpresa. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    const header = document.querySelector('.site-header');
+    toggle.addEventListener('click', () => {
+      const open = header.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => header.classList.remove('nav-open')));
+    let lastY = 0;
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      header.classList.toggle('scrolled', y > 8);
+      header.classList.toggle('hide', y > lastY && y > 120);
+      lastY = y;
+    });
+  </script>
+</body>
+</html>
